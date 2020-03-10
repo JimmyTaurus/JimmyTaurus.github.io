@@ -143,22 +143,11 @@ img {
 .hero-list__img {
   width: 40px;
   height: 40px;
-  border: 2px solid #ffd200;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 50%;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 .hero-list__text {
-  max-width: 300px;
+  max-width: 220px;
 }
 
 @media (max-width: 1200px) {
@@ -180,6 +169,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .hero-text {
+    padding-right: 0px;
+  }
   .hero-text__title {
     font-size: 22px;
     line-height: 1.4;
@@ -190,15 +182,26 @@ img {
     text-align: center;
     font-size: 16px;
     margin-bottom: 28px;
+    margin-left: 20pxs;
+  }
+  .hero-list {
+    max-width: 95%;
   }
   .hero-list__item {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .hero-list__text {
-    font-size: 12px;
+    font-size: 13px;
   }
   .hero-list__img {
-    margin-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
