@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,7 +27,7 @@
                    </a>     
                  </div>
                  <!-- /.navbar__contacts -->
-                 <button class="button navbar__button">Перезвоните мне</button>
+                 <button class="button navbar__button" id="button">Перезвоните мне</button>
              </div>
              <!-- /.navbar__info -->
          </div>
@@ -119,6 +120,80 @@
        </div>
     </div>
 </section>
+
+<section class="section portfolio">
+    <div class="conteiner">
+        <h2 class="section-title portfolio__title">
+            Работая с 2007 года,мы сделали более 500 ремонтов в квартирах и домах</h2>
+        <div class="slider">
+            <div class="slide__item"><img class="slider__image" src="img/slider_1.png" alt=""></div>
+            <div class="slide__item"><img class="slider__image" src="img/slider_2.png" alt=""></div>
+            <div class="slide__item"><img class="slider__image" src="img/slider_3.png" alt=""></div>
+            <div class="slide__item"><img class="slider__image" src="img/slider_1.png" alt=""></div>
+            <div class="slide__item"><img class="slider__image" src="img/slider_2.png" alt=""></div>
+            <div class="slide__item"><img class="slider__image" src="img/slider_3.png" alt=""></div>
+        </div>
+        <div class="arrows portfolio__arrows">
+            <div class="arrows__left">
+                <img src="img/left-arrow.png" alt="">
+            </div>
+            <div class="arrows__right">
+                <img src="img/right-arrow.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- /.conteiner -->
+</section>
+<!-- /.section portfolio -->
+
+
 </main>
+
+
+<div class="modal" id="modal">
+    <div class="modal-dia">
+        <button class="modal-dia__close" id="close">&times;</button>
+        <h4 class="modal-dia__title">Всплывающее окно</h4>
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script src="js/modal.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: $('.arrows__left'),
+            nextArrow: $('.arrows__right'),
+            responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+                }
+            },
+
+
+            ]
+        });
+    });
+</script>
+
+
 </body>
 </html>
