@@ -751,6 +751,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #f7f7f7;
 }
 
 .repair__text {
