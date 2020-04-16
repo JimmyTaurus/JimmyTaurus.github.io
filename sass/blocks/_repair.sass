@@ -1,0 +1,44 @@
+.repair
+    &__head
+        height: 280px
+        background-color: $main-color
+        display: flex
+        justify-content: center
+        align-items: center
+    &__title
+        max-width: 1100px
+        font-size: 32px
+    &__main
+        display: flex
+        justify-content: space-between
+        margin-top: 50px
+    &__blocks
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &__text
+        max-width: 290px
+        margin-left: 25px
+
+
+@media ( max-width:1200px)
+    .repair
+        &__blocks
+            margin: 0 10px
+            justify-content: space-between
+        &__title
+            max-width: 700px
+@media ( max-width:768px)
+    .repair
+        &__main
+            flex-direction: column
+            margin: 0
+        &__blocks
+            max-width: 100%
+            margin-bottom: 70px
+        &__image
+            min-width: 100%
+        &__title
+            max-width: 275px
+            font-size: 18px
+        
